@@ -1,0 +1,9 @@
+package Serveur;
+
+import java.rmi.Remote;
+import java.rmi.RemoteException;
+public interface ICallback extends Remote {
+    // interface de l’objet callback
+    public void doCallback(String message) throws RemoteException;
+} /* s'exécute sur le client (sur demande du serveur) et affiche une
+chaîne */
